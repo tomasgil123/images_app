@@ -1,0 +1,40 @@
+
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "@react-native-community",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "project": ["./jsconfig.json"]
+  },
+  "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/require-default-props": "off",
+      "linebreak-style": "off",
+      "import/no-unresolved": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "jsx-a11y/anchor-is-valid": "off",
+      "import/no-absolute-path": "off",
+      "prettier/prettier": ["error", {
+       "endOfLine":"auto"
+     }]
+    }
+}
